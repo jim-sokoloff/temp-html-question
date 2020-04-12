@@ -1,0 +1,66 @@
+.page {
+  display: flex;
+  flex-flow: column;
+}
+
+/* Slider code from https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+
+.slidecontainer {
+  width: 100%;
+  flex-basis: 100px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90%;
+  height: 50px;
+  border-radius: 20px;
+  background: #aaa;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 75px;
+  height: 75px;
+  border-radius: 25px;
+  background: #1cb929;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #1cb929;
+  cursor: pointer;
+}
+
+.label {
+  color: #999;
+  width: 50%;
+  text-align: end;
+  xxxflex-basis: 400px;
+  font-size-adjust: initial;
+}
+
+.value {
+  color: rgb(0, 78, 10);
+  width: 50%;
+  xxxflex-basis: 400px;
+}
+
+.labeled-value {
+  padding-top: 80px;
+  display: flex;
+  flex-flow: row;
+}

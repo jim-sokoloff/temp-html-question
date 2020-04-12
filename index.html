@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Ventilator Control</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <img style="width: 100%;" src="logo-top.png" />
+      <div
+        style="
+          text-align: center;
+          padding-top: 50px;
+          font-size: 95px;
+          width: 100%;
+        "
+      >
+        <div class="labeled-value">
+          <span class="label">I : E Ratio:</span>
+          <span class="value">
+            <span id="IEout">__ : __</span>
+          </span>
+        </div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            id="IE"
+          />
+        </div>
+
+        <div class="labeled-value">
+          <span class="label">Breath/min:</span>
+          <span class="value">
+            <span id="BPMout">__._</span>
+          </span>
+        </div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="52"
+            value="25"
+            class="slider"
+            id="BPM"
+          />
+        </div>
+      </div>
+      <img
+        style="width: 100%; position: fixed; bottom: 0px;"
+        src="logo-bot.jpg"
+      />
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
